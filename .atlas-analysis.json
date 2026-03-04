@@ -1,0 +1,176 @@
+{
+  "projectType": "infrastructure",
+  "projectName": "NetBird",
+  "projectDescription": "A secure WireGuard-based overlay network platform with SSO, MFA, and granular access controls.",
+  "theme": "aspen",
+  "primaryColor": "#f37836",
+  "lightColor": "#ebc492",
+  "darkColor": "#f4f4f4",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/components",
+              "architecture/network-topology",
+              "architecture/nat-traversal"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/self-hosted",
+              "deployment/docker",
+              "deployment/cloud",
+              "deployment/configuration"
+            ]
+          },
+          {
+            "group": "Client Setup",
+            "pages": [
+              "client/installation",
+              "client/configuration",
+              "client/commands"
+            ]
+          },
+          {
+            "group": "Management",
+            "pages": [
+              "management/overview",
+              "management/setup",
+              "management/peers",
+              "management/access-control",
+              "management/dns",
+              "management/routing"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "security/authentication",
+              "security/access-policies",
+              "security/encryption",
+              "security/posture-checks",
+              "security/rosenpass"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "operations/monitoring",
+              "operations/troubleshooting",
+              "operations/upgrading",
+              "operations/backup-restore"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Management API",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/accounts",
+              "api/peers",
+              "api/groups",
+              "api/policies",
+              "api/routes",
+              "api/dns",
+              "api/users",
+              "api/setup-keys",
+              "api/events"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "cli/overview",
+              "cli/up",
+              "cli/down",
+              "cli/status",
+              "cli/login",
+              "cli/logout",
+              "cli/ssh",
+              "cli/networks",
+              "cli/service",
+              "cli/debug"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "WireGuard-based secure mesh network",
+    "Automatic peer-to-peer NAT traversal",
+    "SSO and MFA integration",
+    "Granular access control policies",
+    "Private DNS management",
+    "Network routing to external networks",
+    "Device posture checks",
+    "Cross-platform support (Linux, macOS, Windows, Android, iOS)",
+    "Self-hosted or cloud deployment options",
+    "Quantum-resistant encryption with Rosenpass",
+    "Public REST API",
+    "Auto peer discovery and configuration"
+  ],
+  "publicApiSurface": [
+    "GET /api/accounts",
+    "GET /api/peers",
+    "POST /api/peers",
+    "DELETE /api/peers/:id",
+    "GET /api/groups",
+    "POST /api/groups",
+    "PUT /api/groups/:id",
+    "DELETE /api/groups/:id",
+    "GET /api/policies",
+    "POST /api/policies",
+    "PUT /api/policies/:id",
+    "DELETE /api/policies/:id",
+    "GET /api/routes",
+    "POST /api/routes",
+    "PUT /api/routes/:id",
+    "DELETE /api/routes/:id",
+    "GET /api/dns/nameservers",
+    "POST /api/dns/nameservers",
+    "GET /api/dns/settings",
+    "PUT /api/dns/settings",
+    "GET /api/users",
+    "POST /api/users",
+    "PUT /api/users/:id",
+    "DELETE /api/users/:id",
+    "GET /api/setup-keys",
+    "POST /api/setup-keys",
+    "PUT /api/setup-keys/:id",
+    "GET /api/events",
+    "netbird up",
+    "netbird down",
+    "netbird status",
+    "netbird login",
+    "netbird logout",
+    "netbird ssh",
+    "netbird networks",
+    "netbird service",
+    "netbird debug"
+  ]
+}
